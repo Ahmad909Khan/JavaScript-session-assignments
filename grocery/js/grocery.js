@@ -11,5 +11,3 @@ function calc(e) {
     e.preventDefault();
 }
 var money = document.getElementById('money');
-var btn = document.getElementById('submit');
-btn.addEventListener('submit', calc)
