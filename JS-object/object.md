@@ -1,0 +1,1 @@
+Created an object named 'person' with details within like name, address etc
