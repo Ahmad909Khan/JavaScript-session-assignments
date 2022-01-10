@@ -1,3 +1,3 @@
-# JavaScript-session-assignments
+# JavaScript-variables&conditions
 Assignment of javascript using variables, operators, function, conditions.
-Added submit event listener to form.
+Added onsubmit function to form.
