@@ -6,6 +6,8 @@ function record() {
     firstName = firstName.charAt(0).toUpperCase() + firstName.slice(1);
     lastName = lastName.charAt(0).toUpperCase() + lastName.slice(1);
     var name = firstName + ' ' + lastName;
+    if(firstName == '' || lastName == '' || mail == ''|| age == '')
+    alert('Please enter all fields properly');
     document.getElementById('records').classList.remove('d-none');
     document.getElementById('show-name').innerText = 'Name: ' + name;
     document.getElementById('show-mail').innerText = 'E-Mail: ' + mail;
