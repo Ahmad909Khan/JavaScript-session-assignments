@@ -1,4 +1,5 @@
-function record() {
+document.querySelector('form').addEventListener('submit', function record(e) {
+    e.preventDefault();
     var firstName = document.getElementById('first-name').value;
     var lastName = document.getElementById('last-name').value;
     var mail = document.getElementById('mail').value;
@@ -21,3 +22,4 @@ function record() {
         document.getElementById('category').innerText = 'Category: ' + 'Genius';
     }
 }
+)
