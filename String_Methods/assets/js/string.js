@@ -1,9 +1,9 @@
-document.querySelector('form').addEventListener('submit', function record(e) {
+function record(e) {
     e.preventDefault();
-    var firstName = document.getElementById('first-name').value;
-    var lastName = document.getElementById('last-name').value;
-    var mail = document.getElementById('mail').value;
-    var age = document.getElementById('age').value;
+    var firstName = e.target.firstName.value;
+    var lastName = e.target.lastName.value;
+    var mail = e.target.mail.value;
+    var age = e.target.age.value;
     firstName = firstName.charAt(0).toUpperCase() + firstName.slice(1);
     lastName = lastName.charAt(0).toUpperCase() + lastName.slice(1);
     var name = firstName + ' ' + lastName;
@@ -20,6 +20,5 @@ document.querySelector('form').addEventListener('submit', function record(e) {
         document.getElementById('category').innerText = 'Category: ' + 'Kid';
     } else {
         document.getElementById('category').innerText = 'Category: ' + 'Genius';
-    }
-}
-)
+    };
+};
