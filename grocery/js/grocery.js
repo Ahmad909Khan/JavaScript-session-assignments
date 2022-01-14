@@ -1,5 +1,5 @@
 function calc(e) {
-    var money = document.getElementById('money').value;
+    var money = e.target.money.value;
     if (money == '' || money < 0)
         alert('Enter some valid amount');
     else if (money > 35) {

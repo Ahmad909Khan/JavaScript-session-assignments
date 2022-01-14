@@ -1,4 +1,5 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -6,13 +7,16 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <title>Document</title>
 </head>
+
 <body class="bg-warning">
-    <form class="col-lg-4 col-md-6 col-sm-8 text-center mx-auto bg-info mt-5 p-5 text-light" onsubmit="calc()">
+    <form class="col-lg-4 col-md-6 col-sm-8 text-center mx-auto bg-info mt-5 p-5 text-light" onsubmit="calc(event)">
         <h2>Can you buy ice cream?</h2>
         ...after you buy groceries
-        <input type="number" id="money" class="form-control my-4" placeholder="Enter the amount you hold...">
+        <input type="number" id="money" class="form-control my-4" name="money"
+            placeholder="Enter the amount you hold...">
         <input type="submit" class="btn btn-danger px-4" Value="Enter">
     </form>
     <script src="js/grocery.js"></script>
 </body>
+
 </html>
